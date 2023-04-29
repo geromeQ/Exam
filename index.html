@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content = "width=deivce-width">
+  	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="script.js"></script>
+	<title>Exam</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<p>Shop Right Now!</p>
+	<div class="flex-container" id="box1">
+		<div class="flexitem">
+			<img src="dell.jpg" class="image">
+			<p>Dell G5 15 5590 Laptop</p>
+			<p><b>Php 52,000</b></p>
+			<button onclick="show1()" class="button">Buy Now</button>
+		</div>
+	</div>
+	<div class="flex-container" id="box2" style="display:none">
+		<div class="flexitem">
+			<img src="dell.jpg" class="image">
+			<p>Dell G5 15 5590 Laptop</p>
+			<p><b>Php 52,000</span></b></p>
+			<button onclick="sub()" class="button">-</button>
+			<span id="num1" style="font-size:30px">1</span>
+			<button onclick="add()" class="button">+</button>
+		</div>
+		<div>
+			<div class="flexitem">
+				<p><b>Ready to check out?</b></p>
+			</div>
+			<div class="flexitem">
+				<div class="flexitem" style="flex-grow: 19">
+					<p>Subtotal: Php <span id="nprice">52,000</span></p>
+					<p>Quantity: <span id="num2">3</span></p>
+					<p>Shipping: Php <span id="ship">3,000</span></p>
+				</div>
+				<p><b>TOTAL AMOUNT: Php <span id="total">3,000</b></p>
+				<button class="button" onclick="show2()">Checkout</button>
+			</div>
+		</div>
+	</div>
+	<div class="flex-container" id="box4" style="display:none">
+        	<div class="flexitem">
+            	<img src="dell.jpg">
+        	</div>
+        	<div class="flexitem">
+        		<div>
+            		<p><b>Dell G5 15 5590 Laptop</b></p>
+            		<p></p>
+            		<p>Quantity: <span id="finalnum">3</span></p>
+            		<p>Shipping Fee: Php <span id="finalship">3,000</span></p>
+            		<p>Total: Php <span id="finaltotal">159,000</span></p>
+            	</div>
+            	<div>
+            		<h1>Thank you for shopping!</h1>
+            	</div>
+        	</div>
+    	</div>
+
+</body>
+</html>
