@@ -14,9 +14,9 @@ function add() {
 		document.getElementById('num2').innerHTML = quantity;
 
 		let nprice = quantity * price
-		let total = nprice + ship
+		let total = totalprice + ship
 
-		document.getElementById('nprice').innerHTML = nprice;
+		document.getElementById('totalprice').innerHTML = totalprice;
 		document.getElementById('total').innerHTML = total;
 		document.getElementById('ship').innerHTML = ship;
 
@@ -38,11 +38,11 @@ function sub() {
 		document.getElementById('num2').innerHTML = quantity;
 
 		let nprice = quantity * price
-		let total = nprice + ship
+		let total = totalprice + ship
 
 		document.getElementById('total').innerHTML = total;
 		document.getElementById('ship').innerHTML = ship;
-		document.getElementById('nprice').innerHTML = nprice;
+		document.getElementById('totalprice').innerHTML = totalprice;
 
 		document.getElementById('finalnum').innerHTML = quantity;
 		document.getElementById('finaltotal').innerHTML = total;
